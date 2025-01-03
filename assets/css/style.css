@@ -1,0 +1,128 @@
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+:root {
+    --primary-color: #171100;
+    --second-color: #ffb900;
+}
+html,
+body {
+    scroll-behavior: smooth;
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    font-size: 1.6rem;
+    margin-bottom: 50px;
+    font-family: "Poppins", sans-serif;
+}
+/* Common */
+.content {
+    width: 1170px;
+    margin: 0 auto;
+    max-width: calc(100% - 44px);
+}
+.dfcenter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.menu {
+    margin-top: 30px;
+}
+.menu {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+}
+.menu a:first-child {
+    margin-left: 30px;
+}
+.menu a:last-child {
+    margin-right: 30px;
+}
+.menu a:hover {
+    opacity: 0.8;
+    text-shadow: 1px 1px 2px #ccc;
+}
+.menu::before {
+    content: "";
+    position: absolute;
+    height: 3px;
+    top: -10px;
+    width: 100%;
+    background-color: #000;
+}
+.menu::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    bottom: -10px;
+    width: 100%;
+    background-color: #000;
+}
+.menu a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 600;
+    font-size: 1.6rem;
+}
+.form {
+    margin-top: 50px;
+}
+.form-group + .form-group {
+    margin-top: 20px;
+}
+.form-group label {
+    display: inline-block;
+    min-width: 130px;
+    margin-right: 20px;
+}
+.form-group input {
+    width: 400px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    padding: 10px 10px;
+    border: 1px solid #ccc;
+}
+.btn {
+    min-width: 100px;
+    padding: 10px;
+    border-radius: 10px;
+    color: #fff;
+    font-weight: 600;
+    background-color: #237bdb;
+    border: none;
+}
+.btn:hover {
+    opacity: 0.9;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px #ccc;
+}
+table {
+    width: 100%;
+    margin-top: 30px;
+}
+table th {
+    text-align: left;
+    color: #000;
+    font-weight: 600;
+}
+table,
+th,
+td {
+    padding: 15px 10px;
+    border: 1px solid black;
+}
+.action {
+    text-align: center;
+}
+.action a {
+    color: rgb(12, 12, 191);
+    text-decoration: none;
+}
+table tr:nth-child(even) {
+    background-color: #e4e4e4;
+}
